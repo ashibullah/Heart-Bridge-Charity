@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind & font awesome  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/d3bb10cbf8.js" crossorigin="anonymous"></script>
+
+    <!-- font  -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+        </style>
+    <!-- daisy ui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              fontFamily: {
+                lexend: ['Lexend' , 'sans-serif'],
+              }
+            }
+          }
+        }
+      </script>
+
+    <title>Heart Bridge Charity</title>
+</head>
+
+<body class="font-lexend">
+    <!-- nav bar start  -->
+    <nav>
+        <div class="navbar bg-gray-100 py-5 md:px-44 sm:px-3 ">
+            <div class="navbar-start">
+                <button class="btn bg-green-400"><a href="/blog.html">Blog</a></button>
+            </div>
+            <div class="navbar-center">
+                <img src="/assets/logo.png" alt="">
+                <a class="btn btn-ghost text-xl">Heart Bridge Charity</a>
+            </div>
+            <div class="navbar-end">
+                <div class=" flex gap-1 items-center p-1 rounded-full">
+                    <div>
+                        <img src="/assets/coin.png" alt="">
+                    </div>
+                    <p class="font-bold">2000</p>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Nav Bar Ends  -->
+
+    <!-- padding x 44 start  -->
+    <main class="md:px-44">
+        <!-- menu btn holder -->
+        <div class="flex justify-center gap-2 mt-9">
+            <button class="btn bg-green-400">Donation</button>
+            <button class="btn btn-outline ">History</button>
+        </div>
+        <!-- Card 1 start  -->
+         <div class="grid grid-cols-2 gap-4 items-center  mt-8 p-3 border rounded-lg lg:max-w-6xl">
+    <img src="/assets/noakhali.png" alt="Flood in Noakhali, Bangladesh">
+    <!-- info holder start  -->
+    <div class="flex flex-col p-2 gap-1">
+        <div class="inline-flex max-w-max items-center justify-center p-2 rounded-lg bg-gray-100">
+            <img src="/assets/coin.png" alt="Coin icon">
+            <p class="ml-2">0</p>
+            <p class="ml-1">BDT</p>
+        </div>
+        <h1 class="font-bold text-2xl">Donate for Flood at Noakhali, Bangladesh</h1>
+        <p class="mt-2 font-sans">The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your donation will help provide essential supplies and support to those affected by this disaster. Every contribution, big or small, makes a difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+        <input type="text" placeholder="Write Amount of Donation" class="input max-w-full  p-2  rounded" />
+        <button class="btn bg-green-400">Donate Now</button>
+
+    </div>
+    <!-- info holder ends  -->
+</div>
+
+        <!-- Card 1 Ends -->
+
+    </main>
+    <!-- padding x 44 end  -->
+
+<script src=""></script>
+</body>
+
+</html>
