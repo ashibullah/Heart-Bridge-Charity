@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- tailwind & font awesome  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/d3bb10cbf8.js" crossorigin="anonymous"></script>
+
+    <!-- font  -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+    </style>
+    <!-- daisy ui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        lexend: ['Lexend', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <title>Heart Bridge Charity</title>
 </head>
-<body>
-    <h1>this is blog</h1>
+
+<body class="font-lexend">
+    <nav class="sticky top-0 backdrop-blur-sm bg-gray-100 bg-opacity-80"></nav>
+        <div class="navbar  py-5 md:px-44 sm:px-3  bg-gray-200 bg-opacity-80 ">
+            <div class="navbar-start">
+                <button class="btn bg-green-400"><a href="/index.html">Home</a></button>
+            </div>
+            <div class="navbar-center">
+                <img src="/assets/logo.png" alt="">
+                <a class="btn btn-ghost text-xl">Heart Bridge Charity</a>
+            </div>
+            <div class="navbar-end">
+                <div class=" flex gap-1 items-center p-1 rounded-full">
+                    <div>
+                        <img src="/assets/coin.png" alt="">
+                    </div>
+                    <p id="my-balance" class="font-bold">78900</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- menu btn holder -->
+
+    </nav>
+
+    <main class="md:px-44 mt-20">
+        <div class="collapse collapse-arrow mb-2 bg-gray-50">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is JavaScript?</div>
+            <div class="collapse-content">
+              <p>JavaScript (JS) is a high-level, versatile programming language primarily used for web development. It enables interactive and dynamic content on websites, allowing developers to create features like animations, form validation, and real-time updates. JavaScript runs in the browser, making it a key technology alongside HTML and CSS, and is also used on the server side with environments like Node.js. Its popularity and wide-ranging capabilities make it essential for modern web applications.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow mb-2 bg-gray-50">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">Benefits of Tailwind css</div>
+            <div class="collapse-content">
+              <p>Tailwind CSS offers a utility-first approach, allowing developers to build designs directly in their markup for faster and more efficient workflows. Its highly customizable nature enables consistent design across projects, while built-in responsive design features make it easy to adapt layouts for different screens. With minimal styling constraints, Tailwind promotes unique designs and rapid prototyping. Additionally, its strong community support and integration with tools like PurgeCSS help optimize performance by removing unused styles, making Tailwind an excellent choice for modern web development.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow mb-2 bg-gray-50">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">Is it essential to use figma?</div>
+            <div class="collapse-content">
+              <p>Using Figma is not essential but highly beneficial for collaborative design and prototyping. It streamlines the design process, especially for teams, by allowing real-time collaboration, easy sharing, and creating responsive designs. However, other design tools can also be effective based on your workflow.</p>
+            </div>
+          </div>
+    </main>
+    
 </body>
 </html>
