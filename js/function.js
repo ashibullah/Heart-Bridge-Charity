@@ -1,3 +1,7 @@
+const balance = getInputInnerText('my-balance');
+const donatedOne = getInputInnerText('donation-1');
+
+
 function calculation(amountOfDonate, amountAlreadyDonated, donationTitle){
     // console.log("Running Calculation function");
     const donateAmount = getInputValue(amountOfDonate);
@@ -12,7 +16,8 @@ function calculation(amountOfDonate, amountAlreadyDonated, donationTitle){
         const title = document.getElementById(donationTitle).innerText;
         // console.log(title);
         addHistory(donateAmount, title );
-    
+        my_modal_1.showModal();
+        document.getElementById(amountOfDonate).value = "";
     }
 
 }

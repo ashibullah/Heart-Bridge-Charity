@@ -1,5 +1,3 @@
-const balance = getInputInnerText('my-balance');
-const donatedOne = getInputInnerText('donation-1');
 
 
 
