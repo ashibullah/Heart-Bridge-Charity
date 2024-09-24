@@ -1,5 +1,5 @@
 function calculation(amountOfDonate, amountAlreadyDonated, donationTitle){
-    console.log("Running Calculation function");
+    // console.log("Running Calculation function");
     const donateAmount = getInputValue(amountOfDonate);
     const balance = getInputInnerText('my-balance');
     const donatedOne = getInputInnerText(amountAlreadyDonated);
@@ -26,12 +26,15 @@ function getInputValue(id){
     return inputValue;
 }
 
-function toggleBtn(id){
-    console.log();
+function toggleBtn(id,btnId){
+    
     document.getElementById('history-toggle').classList.add('hidden');
     document.getElementById('donation-toggle').classList.add('hidden');
+    document.getElementById('donation-toggle-btn').classList.remove('bg-green-400');
+    document.getElementById('history-toggle-btn').classList.remove('bg-green-400');
 
     document.getElementById(id).classList.remove('hidden');
+    document.getElementById(btnId).classList.add('bg-green-400');
 }
 
 function addHistory(amount,title){
